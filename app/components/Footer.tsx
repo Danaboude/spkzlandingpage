@@ -23,39 +23,39 @@ export function Footer() {
 
                     {/* Center Section */}
                     <div className="text-center">
-                           <div className="flex justify-center lg:justify-end gap-2 mb-4">
+                           <div className="flex justify-center lg:justify-end gap-1 sm:gap-2 mb-4">
                             <a
                                 href="https://pump.fun/"
-                                className="flex items-center gap-2 px-4 py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
                                 title="Pump.fun link"
                             >
-                                <GlobeAltIcon className="w-5 h-5" />
+                                <GlobeAltIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                                 Pump.fun
                             </a>
                             <a
                                 href="https://www.Revelcy.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
                             >
-                                <ArrowTopRightOnSquareIcon className="w-5 h-5" />
+                                <ArrowTopRightOnSquareIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                                 Revelcy
                             </a>
                             <a
                                 href="https://x.com/mostroxyz"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-2 px-4 py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
                             >
-                                <XMarkIcon className="w-5 h-5" />
+                                <XMarkIcon className="w-4 h-4 sm:w-5 sm:h-5" />
                                 Twitter/X
                             </a>
                             <a
                                 href="#"
-                                className="flex items-center gap-2 px-4 py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
                                 title="Gated Discord (coming soon)"
                             >
-                                <FaDiscord className="w-5 h-5" /> {/* Using react-icons for Discord */}
+                                <FaDiscord className="w-4 h-4 sm:w-5 sm:h-5" /> {/* Using react-icons for Discord */}
                                 Discord
                             </a>
                         </div>
