@@ -42,7 +42,7 @@ export function KeySection() {
           100% { transform: translateX(-50%); }
         }
         .infinite-scroll {
-          animation: scrollX 25s linear infinite;
+          animation: scrollX 10s linear infinite;
         }
       `}</style>
 
@@ -55,31 +55,59 @@ export function KeySection() {
         </div>
 
         <div className="overflow-hidden w-full">
-          <div className="flex gap-6 lg:gap-8 infinite-scroll w-fit">
-            {allBenefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0  w-80 group relative bg-gradient-to-br from-[#1E97E6]/10 to-[#9C8BE7]/10 border border-[#3FD9FF]/30 rounded-xl p-8 lg:p-10 hover:border-[#D3FE3D] transition-all duration-300 hover:shadow-[0_0_30px_rgba(211,254,61,0.2)]"
-              >
-                <div className="mb-6 flex justify-center items-center p-4 rounded-lg">
-                  <Image
-                    src={benefit.icon}
-                    alt={benefit.title}
-                    width={120}
-                    height={120}
-                    className="w-39 h-auto p-4"
-                  />
-                </div>
-                <h3 className="mb-4 text-[#FFFFFF] text-lg sm:text-xl md:text-2xl lg:-mt-10">
-                  {benefit.title}
-                </h3>
-                <p className="text-[#D2D2D5] text-sm sm:text-base md:text-lg">
-                  {benefit.description}
-                </p>
+          <div className="flex infinite-scroll w-fit">
+            <div className="flex flex-shrink-0 gap-6 lg:gap-8 pr-6 lg:pr-8">
+              {benefits.map((benefit, index) => (
+                <div
+                  key={`first-${index}`}
+                  className="flex-shrink-0  w-80 group relative bg-gradient-to-br from-[#1E97E6]/10 to-[#9C8BE7]/10 border border-[#3FD9FF]/30 rounded-xl p-8 lg:p-10 hover:border-[#D3FE3D] transition-all duration-300 hover:shadow-[0_0_30px_rgba(211,254,61,0.2)]"
+                >
+                  <div className="mb-6 flex justify-center items-center p-4 rounded-lg">
+                    <Image
+                      src={benefit.icon}
+                      alt={benefit.title}
+                      width={120}
+                      height={120}
+                      className="w-39 h-auto p-4"
+                    />
+                  </div>
+                  <h3 className="mb-4 text-[#FFFFFF] text-lg sm:text-xl md:text-2xl lg:-mt-10">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-[#D2D2D5] text-sm sm:text-base md:text-lg">
+                    {benefit.description}
+                  </p>
 
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#D3FE3D]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </div>
-            ))}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#D3FE3D]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+              ))}
+            </div>
+            <div className="flex flex-shrink-0 gap-6 lg:gap-8 pr-6 lg:pr-8">
+              {benefits.map((benefit, index) => (
+                <div
+                  key={`second-${index}`}
+                  className="flex-shrink-0  w-80 group relative bg-gradient-to-br from-[#1E97E6]/10 to-[#9C8BE7]/10 border border-[#3FD9FF]/30 rounded-xl p-8 lg:p-10 hover:border-[#D3FE3D] transition-all duration-300 hover:shadow-[0_0_30px_rgba(211,254,61,0.2)]"
+                >
+                  <div className="mb-6 flex justify-center items-center p-4 rounded-lg">
+                    <Image
+                      src={benefit.icon}
+                      alt={benefit.title}
+                      width={120}
+                      height={120}
+                      className="w-39 h-auto p-4"
+                    />
+                  </div>
+                  <h3 className="mb-4 text-[#FFFFFF] text-lg sm:text-xl md:text-2xl lg:-mt-10">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-[#D2D2D5] text-sm sm:text-base md:text-lg">
+                    {benefit.description}
+                  </p>
+
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-[#D3FE3D]/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
