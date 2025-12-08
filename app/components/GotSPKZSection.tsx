@@ -39,7 +39,7 @@ export function GotSPKZSection() {
   "
               />
 
-             
+
             </div>
 
             <h2 className="mb-8 text-white text-3xl sm:text-3xl md:text-3xl  lg:whitespace-nowrap lg:text-4xl xl:text-4xl animate-fade-in-up animation-delay-200">
