@@ -67,7 +67,7 @@ export function KeySection() {
                     alt={benefit.title}
                     width={120}
                     height={120}
-                    className="w-35 h-auto p-4"
+                    className="w-39 h-auto p-4"
                   />
                 </div>
                 <h3 className="mb-4 text-[#FFFFFF] text-lg sm:text-xl md:text-2xl lg:-mt-10">
