@@ -23,7 +23,7 @@ export function Footer() {
 
                     {/* Center Section */}
                     <div className="text-center">
-                           <div className="flex flex-wrap justify-center lg:justify-center gap-1 sm:gap-2 md:gap-3 mb-4">
+                           <div className="flex flex-wrap lg:flex-nowrap justify-center lg:justify-center gap-1 sm:gap-2 md:gap-3 mb-4">
                             <a
                                 href="https://pump.fun/"
                                 className="flex items-center gap-1 sm:gap-2 md:gap-3 px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm md:text-base font-medium hover:scale-105"
