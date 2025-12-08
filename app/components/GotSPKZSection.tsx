@@ -42,15 +42,15 @@ export function GotSPKZSection() {
 
             </div>
 
-            <h2 className="mb-8 text-white text-3xl sm:text-3xl md:text-3xl  lg:whitespace-nowrap lg:text-4xl xl:text-4xl animate-fade-in-up animation-delay-200">
+            <h2 className="mb-8 text-white text-3xl sm:text-3xl md:text-3xl  lg:whitespace-nowrap lg:text-2xl xl:text-4xl animate-fade-in-up animation-delay-200">
               Your key to the future of music culture
             </h2>
 
-            <p className="text-white mb-6 text-2xl sm:text-3xl animate-fade-in-up animation-delay-400">
+            <p className="text-white mb-6 text-2xl sm:text-3xl lg:text-2xl animate-fade-in-up animation-delay-400">
               Become a SPKZ Millionaire.
             </p>
 
-            <p className="text-gray-300 mb-12 text-2xl sm:text-3xl animate-fade-in-up animation-delay-600">
+            <p className="text-gray-300 mb-12 text-2xl lg:text-2xl sm:text-3xl animate-fade-in-up animation-delay-600">
               Buy a Key. Get Perks.
             </p>
 

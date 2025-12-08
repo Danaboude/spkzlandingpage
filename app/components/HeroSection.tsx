@@ -51,7 +51,7 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-0 lg:gap-5 text-center lg:text-left">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-5 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -84,10 +84,10 @@ export function HeroSection() {
                 height={138}
                 className="w-[400px] sm:w-[250px] md:w-[400px] lg:w-[400px] xl:w-[650px] h-auto lg:-ml-3  "
               />
-              <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-1">
+              <p className="text-lg sm:text-xl lg:text-3xl xl:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-1">
                 The Speakeasy token SPKZ
               </p>
-              <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-8">
+              <p className="text-lg sm:text-xl lg:text-3xl xl:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-8">
                 Your key to the Mostro ecosystem
               </p>
 
