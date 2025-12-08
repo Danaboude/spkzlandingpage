@@ -61,13 +61,13 @@ export function KeySection() {
                 key={index}
                 className="flex-shrink-0  w-80 group relative bg-gradient-to-br from-[#1E97E6]/10 to-[#9C8BE7]/10 border border-[#3FD9FF]/30 rounded-xl p-8 lg:p-10 hover:border-[#D3FE3D] transition-all duration-300 hover:shadow-[0_0_30px_rgba(211,254,61,0.2)]"
               >
-                <div className="mb-6 inline-flex justify-start items-start p-4 rounded-lg">
+                <div className="mb-6 flex justify-center items-center p-4 rounded-lg">
                   <Image
                     src={benefit.icon}
                     alt={benefit.title}
                     width={120}
                     height={120}
-                    className="w-80 h-auto "
+                    className="w-35 h-auto p-4"
                   />
                 </div>
                 <h3 className="mb-4 text-[#FFFFFF] text-lg sm:text-xl md:text-2xl lg:-mt-10">
