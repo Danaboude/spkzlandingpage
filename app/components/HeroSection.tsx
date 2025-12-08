@@ -84,7 +84,7 @@ export function HeroSection() {
                 height={138}
                 className="w-[400px] sm:w-[250px] md:w-[400px] lg:w-[400px] xl:w-[650px] h-auto  "
               />
-              <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 lg:-mt-40 -mt-20 whitespace-nowrap max-w-md mb-1">
+              <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-1">
                 The Speakeasy token SPKZ
               </p>
               <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-8">
