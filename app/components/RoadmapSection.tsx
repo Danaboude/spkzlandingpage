@@ -1,31 +1,28 @@
 "use client";
+import Image from "next/image";
 
 import { motion } from "framer-motion";
 
 export default function RoadmapSection() {
   const roadmapEvents = [
     {
-      date: "Dec 10th",
-      title: "Token Launch",
-      description: "Initial token generation and ecosystem setup",
+      date: "December",
+      description: "Instant access to the Speakeasy gated Discord channel Access to livestreams, talks PFP drop, music drop",
       color: "bg-blue-500", // Added color property
     },
     {
-      date: "Feb",
-      title: "Artist NFT Drop",
-      description: "Exclusive artist collaboration NFT releases",
+      date: "Winter 2026",
+      description: "Early Access to Beta launch Music drops Exclusive livestreams",
       color: "bg-purple-500",
     },
     {
-      date: "Feb",
-      title: "Flywheel Launch",
-      description: "10% of platform revenue used for buybacks",
+      date: "Spring 2026",
+      description: "Multistream event Sonic Green for Earth Day in April Event perks",
       color: "bg-green-500",
     },
     {
-      date: "Mar",
-      title: "Smth",
-      description: "Additional ecosystem updates and integrations",
+      date: "Summer 2026",
+      description: "Livestreams: Summer concert series Exclusive access",
       color: "bg-yellow-500",
     },
   ];
@@ -39,12 +36,18 @@ export default function RoadmapSection() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7 }}
       >
-        Roadmap
+        <Image
+          src="/SPKZ_MILLIONAIRE_ROADMAP_white.png"
+          alt="SPKZ Token"
+          width={891}
+          height={138}
+          className="w-[480px] sm:w-[400px] lg:w-[1000px] h-auto mx-auto"
+        />
       </motion.h2>
 
       <div className="relative max-w-7xl mx-auto">
         {/* Main timeline line */}
-    
+
 
         <div className="relative flex flex-wrap justify-center items-start">
           {roadmapEvents.map((event, i) => (
@@ -68,9 +71,8 @@ export default function RoadmapSection() {
               </div>
 
               {/* Card with matching color accent */}
-              <div className="mt-4 w-full bg-gray-800 p-6 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02]">
+              <div className="mt-4 w-full bg-gray-800 p-6 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition-all duration-300 group hover:scale-[1.02] min-h-[120px] sm:min-h-[140px] md:min-h-[160px] lg:min-h-[170px]">
                 <p className="text-gray-300 text-lg font-semibold mb-1">{event.date}</p>
-                <h4 className="text-[var(--foreground)] text-2xl font-bold mb-2">{event.title}</h4>
                 {event.description && (
                   <p className="text-gray-400 text-sm leading-relaxed">{event.description}</p>
                 )}

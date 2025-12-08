@@ -2,110 +2,108 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRightIcon, ArrowTopRightOnSquareIcon, ChartBarIcon, UsersIcon, MusicalNoteIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen bg-transparent text-text-light flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-
-      <div className="relative z-10 container mx-auto">
-        {/* Main Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-            <span className="bg-gradient-to-r from-[#8AD4F7] via-[#69489F] to-[#E2FC7B] bg-clip-text text-transparent">
-              SPKZ Token
-            </span>
-            <br />
-            Welcome to the Underground
-
-          </h1>
-          <p className="text-xl text-text-dark max-w-3xl mx-auto">
-            Join the future of music where fans and creators thrive together through tokenization
-          </p>
-        </motion.div>
-
-        {/* Cards Container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
-          {/* Mostro Card - Left */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-[#1C1E2F] rounded-2xl p-6 md:p-8 min-h-[400px] flex flex-col justify-center"
-          >
-            {/* Logo and Title */}
-            <div className="flex flex-col items-center mb-8">
-              <div className="relative mb-6 h-32 flex items-center justify-center">
-                <Image
-                  src="/mostro.png"
-                  alt="Mostro Platform"
-                  width={120}
-                  height={120}
-                  className="relative rounded-xl object-contain"
-                />
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Mostro</h2>
-              <p className="text-sm md:text-base text-gray-300 text-center mb-6">
-                Fan-powered music tokenization platform
-              </p>
-            </div>
-
-            {/* Action Button */}
-            <a
-              href="https://mostro.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-gradient-to-r from-[#8AD4F7] to-cyan-500 text-black font-bold text-base md:text-lg lg:text-xl transition-all duration-300 hover:scale-[1.02]"
+    <>
+      <style jsx global>{`
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+      `}</style>
+      <section className="relative w-full min-h-screen bg-gradient-to-br from-[#1A0B3D] to-[#3A1B7A] text-white flex flex-col justify-center py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="container mx-auto z-10">
+          <div className="absolute top-8 left-1/2 -translate-x-1/2 w-full px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="w-full max-w-6xl mx-auto flex flex-wrap items-start items-start justify-center gap-10"
             >
-              Launch Mostro Platform
-              <ArrowTopRightOnSquareIcon className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-            </a>
-          </motion.div>
-
-          {/* Speakeasy Card - Right */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="bg-[#1C1E2F] rounded-2xl p-6 md:p-8 min-h-[400px] flex flex-col justify-center"
-          >
-            {/* Logo and Title */}
-            <div className="flex flex-col items-center mb-8">
-              <div className="relative mb-6 h-32 flex items-center justify-center">
-                <Image
-                  src="/spkz-mascot.png"
-                  alt="Speakeasy Token"
-                  width={120}
-                  height={120}
-                  className="relative rounded-xl object-contain"
-                />
+              <div className="flex items-center">
+                <div className="relative">
+                  <Image
+                    src="/mostro.png"
+                    alt="Mostro"
+                    width={150}
+                    height={37}
+                    className="w-[120px] h-auto md:w-[150px]"
+                  />
+                  <p className="text-base md:text-xl font-light tracking-widest text-right -mt-1 md:-mt-2">
+                    presents
+                  </p>
+                </div>
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Speakeasy (SPKZ)</h2>
-              <p className="text-sm md:text-base text-gray-300 text-center mb-6">
+              <div className="flex flex-col items-end gap-2">
+                <p className="text-xs lg:text-sm text-right">
+                  Music Capital Markets <br className="hidden sm:block" />
+                  for Real World Artists
+                </p>
+                <a
+                  href="https://mostro.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#d3fe3d] text-black px-3 py-1.5 rounded-md font-bold flex items-center gap-1.5 text-xs hover:bg-yellow-300 transition-colors"
+                >
+                  Go to Mostro
+                  <ArrowRightIcon className="w-3 h-3" />
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-0 lg:gap-0 text-center lg:text-left">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.2,
+                type: "spring",
+                stiffness: 120,
+              }}
+            >
+              <Image
+                src="/spkz-mascot.png"
+                alt="SPKZ Token"
+                width={260}
+                height={260}
+                className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] lg:w-[360px] lg:h-[360px]"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex flex-col items-center lg:items-start"
+            >
+                <Image
+                src="/SPKZTOKENlogowhite.png"
+                alt="SPKZ Token"
+                width={891}
+                height={138}
+                className="w-[400px] sm:w-[250px] md:w-[400px] lg:w-[400px] xl:w-[850px] h-auto lg:-ml-41 -mt-20 sm:-mt-21   "
+              />
+              <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 lg:-mt-40 -mt-20 whitespace-nowrap max-w-md mb-1">
+                The Speakeasy token SPKZ
+              </p>
+              <p className="text-lg sm:text-xl lg:text-5xl text-gray-200 whitespace-nowrap max-w-md mb-8">
                 Your key to the Mostro ecosystem
               </p>
-            </div>
 
-            {/* Action Button */}
-            <a
-              href="#"
-              className="w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-gradient-to-r from-[#69489F] to-purple-600 text-white font-bold text-base md:text-lg lg:text-xl transition-all duration-300 hover:scale-[1.02]"
-            >
-              Buy SPKZ Token
-              <ArrowRightIcon className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-            </a>
-          </motion.div>
+              <div className="w-full flex justify-center">
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center gap-3 px-12 py-4 rounded-full font-bold text-xl transition-all duration-300 hover:scale-[1.05] shadow-lg bg-[#00D1FF] text-white shadow-[#00D1FF]/30 hover:bg-cyan-300"
+                >
+                  Buy SPKZ Token
+                  <ArrowRightIcon className="w-5 h-5" />
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
-
-       
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

@@ -23,44 +23,44 @@ export function Footer() {
 
                     {/* Center Section */}
                     <div className="text-center">
-                           <div className="flex justify-center lg:justify-end gap-1 sm:gap-2 mb-4">
+                           <div className="flex flex-wrap justify-center lg:justify-center gap-1 sm:gap-2 md:gap-3 mb-4">
                             <a
                                 href="https://pump.fun/"
-                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 md:gap-3 px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm md:text-base font-medium hover:scale-105"
                                 title="Pump.fun link"
                             >
-                                <GlobeAltIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                                <GlobeAltIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                                 Pump.fun
                             </a>
                             <a
                                 href="https://www.Revelcy.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 md:gap-3 px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm md:text-base font-medium hover:scale-105"
                             >
-                                <ArrowTopRightOnSquareIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                                <ArrowTopRightOnSquareIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                                 Revelcy
                             </a>
                             <a
                                 href="https://x.com/mostroxyz"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 md:gap-3 px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm md:text-base font-medium hover:scale-105"
                             >
-                                <XMarkIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                                <XMarkIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                                 Twitter/X
                             </a>
                             <a
                                 href="#"
-                                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm font-medium hover:scale-105"
+                                className="flex items-center gap-1 sm:gap-2 md:gap-3 px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4 bg-[#8AD4F7] hover:bg-blue-400 rounded-lg transition-all duration-300 text-black hover:text-gray-800 text-xs sm:text-sm md:text-base font-medium hover:scale-105"
                                 title="Gated Discord (coming soon)"
                             >
-                                <FaDiscord className="w-4 h-4 sm:w-5 sm:h-5" /> {/* Using react-icons for Discord */}
+                                <FaDiscord className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" /> {/* Using react-icons for Discord */}
                                 Discord
                             </a>
                         </div>
 
-                        <p className="text-gray-300 mb-3 text-sm sm:text-base">
+                        <p className="text-gray-300 mb-3 text-base sm:text-lg">
                             Part of the{" "}
                             <a
                                 href="https://www.Mostro.xyz"
@@ -72,15 +72,15 @@ export function Footer() {
                             </a>{" "}
                             ecosystem
                         </p>
-                        <p className="text-gray-400 text-xs sm:text-sm opacity-70">
+                        <p className="text-gray-400 text-sm sm:text-base opacity-70">
                             © 2025 SPKZ. Built on Solana via Pump.fun
                         </p>
                     </div>
 
                     {/* Right Section - Links */}
                     <div className="text-center lg:text-right">
-                     
-                        <p className="text-gray-400 text-[0.6rem] opacity-70 leading-tight">
+
+                        <p className="text-gray-400 text-xs sm:text-sm opacity-70 leading-tight">
                             SPKZ token is a utility token and not a financial instrument.<br className="hidden sm:block" />
                             Nothing on this site constitutes financial advice.
                         </p>
