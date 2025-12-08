@@ -35,7 +35,7 @@ export function GotSPKZSection() {
     sm:w-[360px]   
     md:w-[420px]   
     lg:w-[900px]    
-    xl:w-[1200px]   
+    xl:w-[1200px]   lg:-ml-15 
   "
               />
 

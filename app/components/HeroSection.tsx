@@ -51,7 +51,7 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-0 lg:gap-0 text-center lg:text-left">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-0 lg:gap-5 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
