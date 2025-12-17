@@ -7,6 +7,8 @@ import { PremarketCountdown } from "./components/PremarketCountdown";
 import RoadmapSection from "./components/RoadmapSection";
 import { GotSPKZSection } from "./components/GotSPKZSection";
 import { FAQSection } from "./components/FAQSection";
+import { LinksSection } from "./components/LinksSection";
+
 import { Footer } from "./components/Footer";
 
 export default function Home() {
@@ -21,6 +23,8 @@ export default function Home() {
       <RoadmapSection />
       <FAQSection />
       <GotSPKZSection />
+            <LinksSection />
+
       <Footer />
     </main>
   );

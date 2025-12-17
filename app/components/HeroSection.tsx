@@ -10,7 +10,7 @@ export function HeroSection() {
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
       `}</style>
-      <section className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: `url('/background.png')` }}>
+      <section className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: `url('/celebrating.png')` }}>
         <div className="container mx-auto z-10">
           <div className="absolute top-8 left-4 w-full px-4 sm:px-6 lg:px-8">
             <motion.div
@@ -71,14 +71,14 @@ export function HeroSection() {
             </motion.div>
           </div>
         </div>
-        {/* Button container - position at the bottom and center horizontally */}
-        <div className="w-full flex justify-center pb-8"> {/* Added pb-8 for bottom padding */}
+        {/* Buy SPKZ Token Button */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-5 lg:transform-none">
           <motion.a
             href="#"
-            initial={{ opacity: 0, y: 50 }} // Adjusted animation for bottom placement
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="inline-flex items-center justify-center gap-3 px-12 py-4 rounded-full font-bold text-xl transition-all duration-300 hover:scale-[1.05] shadow-lg bg-[#00D1FF] text-white shadow-[#00D1FF]/30 hover:bg-cyan-300"
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="inline-flex items-center justify-center gap-2 md:gap-3 px-6 md:px-12 py-4 rounded-full font-bold text-base md:text-xl transition-all duration-300 hover:scale-[1.05] shadow-lg bg-[#00D1FF] text-white shadow-[#00D1FF]/30 hover:bg-cyan-300"
           >
             Buy SPKZ Token
             <ArrowRightIcon className="w-5 h-5" />

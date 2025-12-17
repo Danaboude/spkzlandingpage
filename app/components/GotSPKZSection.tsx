@@ -6,12 +6,12 @@ import Image from "next/image";
 
 export function GotSPKZSection() {
   return (
-    <section className="relative py-32 sm:py-40 px-4 sm:px-6 lg:px-8  overflow-hidden bg-transparent">
+    <section className="relative py-32 sm:py-40 px-4 sm:px-6 lg:px-8  overflow-hidden bg-transparent" style={{ backgroundImage: `url('/start.png')`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
       <div className="relative z-10 max-w-6xl mx-auto">
 
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
-          {/* Left side - Mascot */}
+        <div className="flex flex-col lg:flex-row items-start justify-center gap-8 lg:gap-12">
+          {/* Left side - Mascot
           <div className="flex-shrink-0">
             <Image
               src="/SPKZ Mo_pointing_left_arm x.png"
@@ -20,11 +20,11 @@ export function GotSPKZSection() {
               height={138}
               className="w-[300px] sm:w-[400px] lg:w-[500px] h-auto"
             />
-          </div>
+          </div> */}
 
           {/* Right side - Logos and Text */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <div className="flex items-center gap-4 mb-8">
+            {/* <div className="flex items-center gap-4 mb-8">
               <Image
                 src="/SPKZKeywhite-imageonline.co-merged.png"
                 alt="SPKZ Token"
@@ -40,7 +40,7 @@ export function GotSPKZSection() {
               />
 
 
-            </div>
+            </div> */}
 
             <h2 className="mb-8 text-white text-3xl sm:text-3xl md:text-3xl  lg:whitespace-nowrap lg:text-2xl xl:text-4xl animate-fade-in-up animation-delay-200">
               Your key to the future of music culture
