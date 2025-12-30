@@ -19,24 +19,24 @@ export function HeroSection() {
               transition={{ duration: 0.8 }}
               className="w-full max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-10 pr-4"
             >
-                    <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.2,
-                type: "spring",
-                stiffness: 120,
-              }}
-            >
-              <Image
-                src="/spkz-mascot.png"
-                alt="SPKZ Token"
-                width={260}
-                height={260}
-                className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
-              />
-            </motion.div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.8,
+                  delay: 0.2,
+                  type: "spring",
+                  stiffness: 120,
+                }}
+              >
+                <Image
+                  src="/spkz-mascot.png"
+                  alt="SPKZ Token"
+                  width={260}
+                  height={260}
+                  className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24"
+                />
+              </motion.div>
               <div className="flex flex-col items-center justify-center">
                 <div className="flex items-center">
                   <div className="relative">
@@ -54,7 +54,7 @@ export function HeroSection() {
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <p className="text-xs lg:text-sm text-center">
-                    Music Capital Markets <br/>
+                    Music Capital Markets <br />
                     for Real World Artists
                   </p>
                   <a
@@ -72,13 +72,13 @@ export function HeroSection() {
           </div>
         </div>
         {/* Buy SPKZ Token Button */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-5 lg:transform-none">
+        <div className="absolute bottom-20 md:bottom-10 lg:bottom-4 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-5 lg:transform-none">
           <motion.a
             href="#"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="inline-flex items-center justify-center gap-2 md:gap-3 px-6 md:px-12 py-4 rounded-full font-bold text-base md:text-xl transition-all duration-300 hover:scale-[1.05] shadow-lg bg-[#00D1FF] text-white shadow-[#00D1FF]/30 hover:bg-cyan-300"
+            className="inline-flex items-center justify-center gap-2 md:gap-3 px-8 md:px-12 py-4 rounded-full font-bold text-base md:text-xl whitespace-nowrap transition-all duration-300 hover:scale-[1.05] shadow-lg bg-[#00D1FF] text-white shadow-[#00D1FF]/30 hover:bg-cyan-300 w-auto"
           >
             Buy SPKZ Token
             <ArrowRightIcon className="w-5 h-5" />
