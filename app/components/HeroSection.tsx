@@ -10,8 +10,27 @@ export function HeroSection() {
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
       `}</style>
-      <section className="relative w-full min-h-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8 overflow-hidden" style={{ backgroundImage: `url('/celebrating.png')` }}>
-        <div className="container mx-auto z-10">
+      <section className="relative w-full min-h-screen text-white flex flex-col justify-between py-12 px-4 sm:px-6 lg:px-8 overflow-hidden bg-transparent">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url('/celebrating.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
+
+        {/* Vignette Effect */}
+        <div
+          className="absolute inset-0 z-10 pointer-events-none"
+          style={{
+            background: 'radial-gradient(circle at center, transparent 0%, rgba(37, 35, 75, 0.4) 40%, #25234B 90%)'
+          }}
+        />
+
+        <div className="container mx-auto z-20">
           <div className="absolute top-8 left-4 w-full px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -72,7 +91,7 @@ export function HeroSection() {
           </div>
         </div>
         {/* Buy SPKZ Token Button */}
-        <div className="absolute bottom-20 md:bottom-10 lg:bottom-4 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-5 lg:transform-none">
+        <div className="absolute z-30 bottom-20 md:bottom-10 lg:bottom-4 left-1/2 transform -translate-x-1/2 lg:left-auto lg:right-5 lg:transform-none">
           <motion.a
             href="#"
             initial={{ opacity: 0, y: 50 }}

@@ -2,18 +2,10 @@
 import { motion } from "framer-motion";
 
 const roadmapEvents = [
+
   {
-    date: "December",
-    title: "Phase 1: Launch",
-    description: [
-      "Instant access to Speakeasy Discord",
-      "Livestreams and talks",
-      "PFP & music drop",
-    ],
-  },
-  {
-    date: "Winter 2026",
-    title: "Phase 2: Expansion",
+    date: "Q1 Winter 2026",
+    title: "Phase 1: Expansion",
     description: [
       "Early Access to Beta launch",
       "Music drops",
@@ -21,16 +13,16 @@ const roadmapEvents = [
     ],
   },
   {
-    date: "Spring 2026",
-    title: "Phase 3: Community",
+    date: "Q2 Spring 2026",
+    title: "Phase 2: Community",
     description: [
       "Sonic Green Earth Day event",
       "Event perks & rewards",
     ],
   },
   {
-    date: "Summer 2026",
-    title: "Phase 4: Scale",
+    date: "Q3 Summer 2026",
+    title: "Phase 3: Scale",
     description: [
       "Summer concert series",
       "Exclusive access",
