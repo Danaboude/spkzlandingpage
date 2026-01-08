@@ -19,11 +19,11 @@ export default function Home() {
       <HeroSection />
       <KnowledgeBar />
       <KeySection />
-  {/*  <PremarketCountdown targetDate={targetDate} />*/}
+      {/*  <PremarketCountdown targetDate={targetDate} />*/}
       <RoadmapSection />
       <FAQSection />
       <GotSPKZSection />
-            <LinksSection />
+      <LinksSection />
 
       <Footer />
     </main>

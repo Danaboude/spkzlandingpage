@@ -37,7 +37,7 @@ export function GotSPKZSection() {
               alt="SPKZ Key"
               width={200}
               height={150}
-              className="w-40 sm:w-48 lg:w-96 h-auto animate-float animation-delay-500"
+              className="w-[300px] sm:w-[400px] lg:w-[550px] h-auto animate-float animation-delay-500"
             />
           </div>
 
